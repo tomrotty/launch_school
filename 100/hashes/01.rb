@@ -9,7 +9,7 @@ imm_family_arr = []
 
 imm_family = family.select { |k,v| k == :sisters || k == :brothers }
 
-imm_family_arr.push(imm_family.values)
+imm_family_arr.push(imm_family.values).flatten!
 
 
-puts imm_family_arr
+p imm_family_arr
